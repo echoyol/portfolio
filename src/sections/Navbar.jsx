@@ -17,6 +17,10 @@ const Navbar = () => {
     setNavbarOpen(!navbarOpen)
   }
 
+  const closeNavbar = () => {
+    setNavbarOpen(false)
+  }
+
   return (
     <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100 first-line:file:'>
       <div className='flex flex-wrap items-center justify-between mx-auto px-5 py-2'>
@@ -60,10 +64,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='flex gap-5 text-white text-2xl mr-4 max-md:hidden'>
-          <a href=''>
+          <a href='https://github.com/echoyol'>
             <IoLogoGithub />
           </a>
-          <a href=''>
+          <a href='https://www.linkedin.com/in/yanyu-sun-b39b63221/'>
             <FaLinkedin />
           </a>
           {/* <MdLanguage />
@@ -71,7 +75,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {navbarOpen && <MenuOverlay />}
+      {navbarOpen && <MenuOverlay closeNavbar={closeNavbar} />}
     </nav>
   )
 }

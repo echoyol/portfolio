@@ -32,7 +32,7 @@ const HeroSection = () => {
             ways to improve my skills.
           </p>
           <div>
-            <Button>Download CV</Button>
+            <Button href='/#contact'>Hire Me</Button>
           </div>
         </div>
         <div className='col-span-5 place-self-center max-lg:mt-4 '>

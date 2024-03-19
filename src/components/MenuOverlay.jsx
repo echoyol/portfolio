@@ -1,8 +1,10 @@
+// MenuOverlay.jsx
 import { navLinks } from '../data/constants.jsx'
 import NavLink from './NavLink'
 import { motion } from 'framer-motion'
 
-const MenuOverlay = () => {
+const MenuOverlay = ({ closeNavbar }) => {
+  // Ensure closeNavbar function is received as prop
   const listVariants = {
     closed: {
       x: '100vw',
@@ -15,6 +17,7 @@ const MenuOverlay = () => {
       },
     },
   }
+
   return (
     <motion.ul
       variants={listVariants}
@@ -27,6 +30,7 @@ const MenuOverlay = () => {
           <NavLink
             href={item.href}
             label={item.label}
+            onClick={() => closeNavbar()}
           />
         </li>
       ))}
