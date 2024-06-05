@@ -8,11 +8,11 @@ import expressImage from '../assets/images/skills/expressjs.png'
 import mysqlImage from '../assets/images/skills/mysql.svg'
 import pythonImage from '../assets/images/skills/python.png'
 
-import project1Image from '../assets/images/projects/1.png'
-import project2Image from '../assets/images/projects/2.png'
-import project3Image from '../assets/images/projects/3.png'
-import project4Image from '../assets/images/projects/4.png'
-import project5Image from '../assets/images/projects/5.png'
+import project1Image from '../assets/images/projects/portfolio.jpg'
+import project2Image from '../assets/images/projects/proshop.jpg'
+import project3Image from '../assets/images/projects/the-wild-oasis.jpg'
+import project4Image from '../assets/images/projects/nike.jpg'
+import project5Image from '../assets/images/projects/sushi.jpg'
 
 export const navLinks = [
   { href: '#about', label: 'About' },
@@ -65,46 +65,50 @@ export const projectsData = [
   {
     id: 1,
     title: 'React Portfolio Website',
-    description: 'Project 1 description',
+    description:
+      'Designed and developed a personalized portfolio website from scratch, using React, tailwindCSS and Vite.',
     image: project1Image,
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/echoyol/portfolio',
+    previewUrl: 'https://portfolio-mvol.onrender.com',
   },
   {
     id: 2,
-    title: 'Potography Portfolio Website',
-    description: 'Project 2 description',
+    title: 'ProShop MERN eCommerce Platform',
+    description:
+      'Developed a full-stack eCommerce website that allows users to search for, add to cart and pay their items.',
     image: project2Image,
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/echoyol/proshop-fullstack',
+    previewUrl: 'https://proshop-8jbx.onrender.com',
   },
   {
     id: 3,
-    title: 'E-commerce Application',
-    description: 'Project 3 description',
+    title: 'The Wild Oasis',
+    description:
+      'Developed a React-based management system for The Wild Oasis hotel, featuring data visualization, property and client management.',
     image: project3Image,
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/echoyol/the-wild-oasis',
+    previewUrl: 'https://the-wild-oasis-2pz8.onrender.com',
   },
   {
     id: 4,
-    title: 'Food Ordering Application',
-    description: 'Project 4 description',
+    title: 'Nike Website Clone',
+    description:
+      'Developed a Nike website clone using React, tailwindCSS and Vite.',
     image: project4Image,
     tag: ['All', 'Mobile'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/echoyol/nike',
+    previewUrl: 'https://nike-ok9s.onrender.com',
   },
   {
     id: 5,
-    title: 'React Firebase Template',
-    description: 'Authentication and CRUD operations',
+    title: 'Sushi website',
+    description: 'Developed a Sushi website using HTML, CSS and JavaScript.',
     image: project5Image,
     tag: ['All', 'Web'],
-    gitUrl: '/',
-    previewUrl: '/',
+    gitUrl: 'https://github.com/echoyol/sushiWebsite',
+    previewUrl: 'https://sushi-f889.onrender.com',
   },
 ]

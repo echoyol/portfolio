@@ -14,6 +14,8 @@ const ProjectsSection = () => {
             title={project.title}
             description={project.description}
             imgUrl={project.image}
+            githubUrl={project.gitUrl}
+            previewUrl={project.previewUrl}
           />
         ))}
       </div>
